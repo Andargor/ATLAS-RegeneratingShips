@@ -21,8 +21,8 @@ RegenerationAmountUnanchored=0.0
 
 The settings can be interpreted in this fashion:
 
-Once a server is started, after **RegenerationInitialDelaySeconds**, start iterating over player-owned ships every **RegenerationIntervalSeconds**, and repair every attached structure by **RegenerationAmountAnchored** for anchored ships, and **RegenerationAmountUnanchored** for unanchored ones.
+Once a server is started, after `RegenerationInitialDelaySeconds`, start iterating over player-owned ships every `RegenerationIntervalSeconds`, and repair every attached structure by `RegenerationAmountAnchored` for anchored ships, and `RegenerationAmountUnanchored` for unanchored ones.
 
-NOTE: The smaller the RegenerationIntervalSeconds, the processing is done more often. This may bog down large servers with many player ships. For more health regeneration, it is recommended to increase the RegenerationAmountAnchored and/or RegenerationAmountUnanchored values instead of shortening the processing interval.
+NOTE: The smaller the `RegenerationIntervalSeconds`, the processing is done more often. This may bog down large servers with many player ships. For more health regeneration, it is recommended to increase the `RegenerationAmountAnchored` and/or `RegenerationAmountUnanchored` values instead of shortening the processing interval.
 
 
