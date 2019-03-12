@@ -9,17 +9,19 @@ In order to keep the processing as light as possible, the health regeneration do
 
 ## INI SETTINGS
 
-The following are the default settings, that can be modified by adding this section to the GameUserSettings of *every* tile in a grid. To keep the default settings, you do not need this entry in your INI.
+The following are the default settings, that can be modified by adding this section to the GameUserSettings of **every** tile in a grid. To keep the default settings, you do not need this entry in your INI.
 
+```
 [RegeneratingShips]
 RegenerationInitialDelaySeconds=60.0
 RegenerationIntervalSeconds=600.0
 RegenerationAmountAnchored=200.0
 RegenerationAmountUnanchored=0.0
+```
 
 The settings can be interpreted in this fashion:
 
-Once a server is started, after *RegenerationInitialDelaySeconds*, start iterating over player-owned ships every *RegenerationIntervalSeconds*, and repair every attached structure by *RegenerationAmountAnchored* for anchored ships, and *RegenerationAmountUnanchored* for unanchored ones.
+Once a server is started, after **RegenerationInitialDelaySeconds**, start iterating over player-owned ships every **RegenerationIntervalSeconds**, and repair every attached structure by **RegenerationAmountAnchored** for anchored ships, and **RegenerationAmountUnanchored** for unanchored ones.
 
 NOTE: The smaller the RegenerationIntervalSeconds, the processing is done more often. This may bog down large servers with many player ships. For more health regeneration, it is recommended to increase the RegenerationAmountAnchored and/or RegenerationAmountUnanchored values instead of shortening the processing interval.
 
